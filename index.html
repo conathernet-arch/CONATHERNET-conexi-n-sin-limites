@@ -682,6 +682,91 @@ font-size: 0.85rem;
 text-align: center;
 }
 
+/* --- EQUIPO --- */
+.team-section {
+padding: 80px 20px;
+background: var(--bg-deep);
+}
+
+.cards-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 30px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.card {
+background-color: #fff;
+width: 320px;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-8px);
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-header {
+background-color: #0077b6;
+height: 120px;
+}
+
+.card .profile-img {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 4px solid #fff;
+margin: -50px auto 10px;
+display: block;
+object-fit: cover;
+}
+
+.card .card-body {
+text-align: center;
+padding: 0 20px 20px;
+}
+
+.card .card-body h2 {
+margin: 10px 0 5px;
+font-size: 1.3em;
+color: #333;
+min-height: 48px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.card .card-body p {
+color: #666;
+font-size: 0.9em;
+margin-bottom: 15px;
+line-height: 1.4;
+min-height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.card .card-body a {
+display: inline-block;
+margin: 5px;
+padding: 8px 15px;
+border-radius: 20px;
+text-decoration: none;
+color: #fff;
+background-color: #0077b6;
+transition: background-color 0.3s ease;
+}
+
+.card .card-body a:hover {
+background-color: #023e8a;
+}
+
 /* --- FOOTER --- */
 footer {
 padding: 100px 20px 40px;
@@ -745,6 +830,7 @@ text-align: center;
 <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
 <li><a href="#servicios">¿Qué ofrecemos?</a></li>
 <li><a href="#normatividad">Normatividad</a></li>
+<li><a href="#equipo">Equipo</a></li>
 </ul>
 <div class="hamburger" id="hamburger" onclick="toggleMenu()">
 <span></span>
@@ -758,6 +844,7 @@ text-align: center;
 <a href="#quienes-somos" onclick="toggleMenu()">¿Quiénes somos?</a>
 <a href="#servicios" onclick="toggleMenu()">¿Qué ofrecemos?</a>
 <a href="#normatividad" onclick="toggleMenu()">Normatividad</a>
+<a href="#equipo" onclick="toggleMenu()">Equipo</a>
 </div>
 
 <!-- ==================== 1. INICIO ==================== -->
@@ -917,6 +1004,93 @@ TOTAL: $<span id="total">0</span>.00 MXN
 </form>
 </div>
 </section>
+<!-- Redes Sociales - Profa. Esther -->
+<div class="norma-redes">
+<h3><i class="fas fa-hashtag"></i> Síguenos en redes sociales</h3>
+<div class="social-links">
+<a href="https://www.instagram.com/conathernet?igsh=N2s1cmkwMjloeWVw" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+<i class="fab fa-instagram"></i>
+</a>
+<a href="https://www.tiktok.com/@conathernet6?_r=1&_t=ZS-96loX6YOrtC" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="TikTok">
+<i class="fab fa-tiktok"></i>
+</a>
+<a href="mailto:conathernet@gmail.com" class="social-icon" aria-label="Correo electrónico">
+<i class="fas fa-envelope"></i>
+</a>
+</div>
+</div>
+<!-- ==================== 5. EQUIPO ==================== -->
+<section id="equipo" class="team-section reveal">
+<h2 class="section-title">Nuestro Equipo</h2>
+<div class="cards-container">
+<!-- Tarjeta 1 - Kevin -->
+<div class="card">
+<div class="card-header"></div>
+<img src="https://i.ibb.co/21DyxgkJ/1779499469265.png" alt="Foto de perfil KEVIN" class="profile-img">
+<div class="card-body">
+<h2>VELASCO VELASCO KEVIN EDUARDO</h2>
+<p>DESARROLLADOR Y ADMINISTRADOR DE PLATAFORMAS WEB</p>
+<a href="mailto:kevin.velasco@email.com">Email</a>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+</div>
+</div>
+<!-- Tarjeta 2 - Silva -->
+<div class="card">
+<div class="card-header"></div>
+<img src="https://i.ibb.co/7NRmMF0m/1779499462995.png" alt="Foto de perfil SILVA" class="profile-img">
+<div class="card-body">
+<h2>SILVA FLORES JOSE EDUARDO</h2>
+<p>INGENIERO DE SEGURIDAD INFORMÁTICA</p>
+<a href="mailto:jose.silva@email.com">Email</a>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+</div>
+</div>
+<!-- Tarjeta 3 - Abigail -->
+<div class="card">
+<div class="card-header"></div>
+<img src="https://i.ibb.co/nMymtd6j/1779499473692.png" alt="Foto de perfil ABIGAIL" class="profile-img">
+<div class="card-body">
+<h2>SÁNCHEZ GARCÍA YOELI ABIGAIL</h2>
+<p>GERENTE DE GESTIÓN COMERCIAL Y PROYECTOS</p>
+<a href="mailto:yoeli.sanchez@email.com">Email</a>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+</div>
+</div>
+<!-- Tarjeta 4 - Yuritsy -->
+<div class="card">
+<div class="card-header"></div>
+<img src="https://i.ibb.co/zTWG2PC9/1779499478574.png" alt="Foto de perfil YURITSY" class="profile-img">
+<div class="card-body">
+<h2>CAMPOS NERIA YURITSY GUADALUPE</h2>
+<p>ADMINISTRADOR DE SOPORTE TÉCNICO</p>
+<a href="mailto:yuritsy.campos@email.com">Email</a>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+</div>
+</div>
+<!-- Tarjeta 5 - Josué -->
+<div class="card">
+<div class="card-header"></div>
+<img src="https://i.ibb.co/whtybwZY/1779499482448.png" alt="Foto de perfil JOSUÉ" class="profile-img">
+<div class="card-body">
+<h2>LÓPEZ HERNÁNDEZ JOSUÉ</h2>
+<p>DIRECTOR DE REDES Y COMUNICACIONES</p>
+<a href="mailto:josue.lopez@email.com">Email</a>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+</div>
+</div>
+<!-- Tarjeta 6 - Hugo -->
+<div class="card">
+<div class="card-header"></div>
+<img src="https://i.ibb.co/zTWpM684/1779499486336.png" alt="Foto de perfil HUGO" class="profile-img">
+<div class="card-body">
+<h2>MARTÍNEZ AVENDAÑO HUGO OMAR</h2>
+<p>DIRECTOR GENERAL DE INFRAESTRUCTURA</p>
+<a href="mailto:hugo.martinez@email.com">Email</a>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+</div>
+</div>
+</div>
+</section>
 
 <!-- ==================== 4. NORMATIVIDAD Y FORMATOS ==================== -->
 <section id="normatividad" class="norma-section reveal">
@@ -933,21 +1107,7 @@ TOTAL: $<span id="total">0</span>.00 MXN
 <iframe class="embed-frame" src="https://drive.google.com/file/d/1Vui17MAmh3c4UGuFn2V9BsNClMfKf322/preview" allow="autoplay"></iframe>
 </div>
 
-<!-- Redes Sociales - Profa. Esther -->
-<div class="norma-redes">
-<h3><i class="fas fa-hashtag"></i> Síguenos en redes sociales</h3>
-<div class="social-links">
-<a href="https://www.instagram.com/conathernet?igsh=N2s1cmkwMjloeWVw" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
-<i class="fab fa-instagram"></i>
-</a>
-<a href="https://www.tiktok.com/@conathernet6?_r=1&_t=ZS-96loX6YOrtC" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="TikTok">
-<i class="fab fa-tiktok"></i>
-</a>
-<a href="mailto:conathernet@gmail.com" class="social-icon" aria-label="Correo electrónico">
-<i class="fas fa-envelope"></i>
-</a>
-</div>
-</div>
+
 </section>
 
 <!-- ==================== FOOTER ==================== -->
